@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Cálculo de pisos</title>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Cálculo de pisos</h1>
+    <form id="loan-form" onsubmit="calculateResult(event)">
+      <div class="form-input">
+        <label for="loan-value">Valor:</label>
+        <input type="number" id="loan-value" min="35" step="0.01" required>
+      </div>
+      <div class="form-input">
+        <label for="loan-installments">Quantidade de Piso:</label>
+        <input type="number" id="loan-installments" min="1" step="1" required>
+      </div>
+      <div class="form-input">
+        <label for="client-type">Tipo de pisos:</label>
+        <select id="client-type">
+          <option value="35 o m²">cerâmica</option>
+          <option value="125 o m²">parcelanato</option>
+          <option value="330 o m²">madeira</option>
+        </select>
+      </div>
+
+      <div id="button-area">
+        <button>Calcular preço do pisos</button>
+      </div>
+    </form>
+
+    <span id="result"></span>
+  </div>
+
+  <script src="/main.js"></script>
+</body>
+
+</html>

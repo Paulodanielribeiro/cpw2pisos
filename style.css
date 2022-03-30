@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "title";
+  src: url(./Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: "regular";
+  src: url(./Poppins-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  color:rgb(41, 2, 214);
+}
+
+#container {
+  width: 60%;
+  margin: 20px auto;
+  font-family: "regular";
+  padding: 30px;
+  background-color: aquamarine;
+}
+
+h1 {
+  text-align: center;
+  font-family: "title";
+  color: #23647e;
+}
+
+#loan-form {
+  margin: auto;
+  width: 60%;
+}
+
+#loan-form button {
+  color: rgb(173, 201, 16);
+  font-family: "title";
+  background-color: rgb(170, 17, 17);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.form-input {
+  display: flex;
+  width: 65%;
+  margin: 0 auto 15px auto;
+}
+
+.form-input input {
+  text-align: right;
+  font-family: "regular";
+  margin-left: auto;
+}
+
+.form-input select {
+  text-align: center;
+  font-family: "regular";
+  margin-left: auto;
+  
+}
+
+#loan-value {
+  width: 240px;
+  border-radius: 30px;
+  box-shadow: none;
+  background-color: grey;
+  color: blue;
+}
+
+#loan-installments {
+  width: 97px;
+  border-radius: 30px;
+  box-shadow: none;
+  background-color: grey;
+  color: blue;
+}
+
+#client-type {
+  width: 50%;
+  color: blue;
+  border-radius: 30px;
+  box-shadow: none;
+  background-color: gray;
+}
+
+#button-area {
+  text-align: center;
+  margin-top: 20px;
+  background-color: rgb(5, 233, 202);
+  border-radius: 30px;
+
+}
+
+#result {
+  text-align: center;
+  display: block;
+  margin-top: 30px;
+  font-family: "title";
+  background-color: gold;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  #container {
+    width: 90%;
+    color: blueviolet;
+  }
+
+  h1 {
+    font-size: 150%;
+  }
+
+  #loan-form {
+    width: 100%;
+  }
+
+  .form-input {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-input input, 
+  .form-input select {
+    margin: auto;
+    text-align: center;
+    font-size: 120%;
+  }
+
+  .form-input label,
+  #button-area button,
+  #result {
+    font-size: 120%;
+  }
+
+
+}
+
+
